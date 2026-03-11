@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PF-UF2-M9 | Mixtape</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Icones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- CSS meu -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <a href="#contacte" class="pestanya-contacte">✉ Contacta'm</a>
+
+    <!-- CAPÇALERA -->
+    <header class="header-principal">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#inici">PF-UF2-M9</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuWeb"
+                    aria-controls="menuWeb" aria-expanded="false" aria-label="Obrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuWeb">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#imatges">Imatges</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#audio">Àudio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#video">Vídeo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacte">Contacte</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#xarxes">XXSS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero" id="inici">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <p class="hero-petit">Projecte final</p>
+                        <h1>Mixtape Multimèdia</h1>
+                        <p class="hero-text">
+                            Hola! Et dono la benvinguda a la meva Landing Page.<br>
+                            Aquí recullo diferents pràctiques:
+                            imatges SVG VS mapa de bits, diferents formats d’àudio i
+                            edició de vídeo amb KdenLive, tot integrant-ho a una pàgina web.
+                        </p>
+
+                        <p>Dona't una volta i envia'm una sugerencia si et ve de gust! ^.^ </p>
+
+                        <div class="hero-botons">
+                            <a href="#imatges" class="btn btn-primary">Començar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="hero-caixa">
+                            <img src="img/futurahacker.jpg" alt="Imatge principal del projecte multimèdia"
+                                class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- CONTINGUT PRINCIPAL -->
+    <main>
+        <!-- SECCIÓ IMATGES -->
+        <section class="seccio seccio-imatges" id="imatges">
+            <div class="container">
+                <div class="titol-seccio">
+                    <p class="subtitol">Pràctica 1</p>
+                    <h2>SVG VS Bitmap🤖</h2> <br>
+                    <p>
+                        En aquesta primera pràctica vaig comparar imatges vectorials creades amb SVG
+                        amb les seves versions en mapa de bits per observar diferències
+                        de qualitat, escalat i nitidesa.
+                    </p>
+                </div>
+
+                <div class="row g-4 bloc-comparativa">
+                    <!-- CARRUSEL SVG -->
+                    <div class="col-12 col-lg-6">
+                        <div class="bloc-carrusel">
+                            <h3 class="mb-3">SVG (vectorial)</h3>
+
+                            <div id="carouselSvg" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner rounded-4 shadow-sm">
+
+                                    <div class="carousel-item active">
+                                        <div class="slide-svg">
+                                            <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0" y="0" width="300" height="300" fill="skyblue" />
+                                                <circle cx="40" cy="40" r="22" fill="gold" />
+                                                <rect x="0" y="200" width="300" height="100" fill="lightgreen" />
+                                                <rect x="55" y="110" width="180" height="130" fill="darksalmon" />
+                                                <polygon points="55,110 145,30 235,110" fill="peru" />
+                                                <rect x="130" y="180" width="43" height="60" fill="saddlebrown" />
+                                                <circle cx="136" cy="210" r="3" fill="gold" />
+                                                <rect x="70" y="137" width="36" height="35" fill="whitesmoke" />
+                                                <rect x="184" y="137" width="36" height="35" fill="whitesmoke" />
+                                            </svg>
+                                        </div>
+                                        <div class="carousel-caption-custom">
+                                            <h4>Casa en SVG</h4>
+                                            <p>1st Round: Codi SVG.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="slide-svg">
+                                            <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0" y="0" width="300" height="300" fill="gainsboro" />
+                                                <rect x="40" y="140" width="220" height="60" fill="red" />
+                                                <rect x="90" y="92" width="120" height="48" fill="red" />
+                                                <rect x="105" y="100" width="45" height="30" fill="skyblue" />
+                                                <rect x="158" y="100" width="36" height="30" fill="skyblue" />
+                                                <circle cx="95" cy="200" r="30" fill="black" />
+                                                <circle cx="210" cy="200" r="30" fill="black" />
+                                                <circle cx="95" cy="200" r="16" fill="gray" />
+                                                <circle cx="210" cy="200" r="16" fill="gray" />
+                                                <rect x="40" y="155" width="15" height="16" fill="yellow" />
+                                                <rect x="245" y="155" width="15" height="16" fill="yellow" />
+                                            </svg>
+                                        </div>
+                                        <div class="carousel-caption-custom">
+                                            <h4>Cotxe en SVG</h4>
+                                            <p>2nd Round: Codi SVG.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="slide-svg">
+                                            <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="0" y="0" width="300" height="300" fill="#f5f5f5" />
+                                                <rect x="90" y="60" width="120" height="85" rx="15" ry="15"
+                                                    fill="darkgray" />
+                                                <circle cx="125" cy="95" r="16" fill="lime" />
+                                                <circle cx="175" cy="95" r="16" fill="lime" />
+                                                <circle cx="125" cy="95" r="8" fill="white" />
+                                                <circle cx="175" cy="95" r="8" fill="white" />
+                                                <line x1="150" y1="25" x2="150" y2="60" stroke="darkgray"
+                                                    stroke-width="6" />
+                                                <circle cx="150" cy="25" r="7" fill="red" />
+                                                <rect x="105" y="165" width="90" height="110" fill="darkgray" />
+                                                <rect x="65" y="185" width="40" height="14" fill="darkgray" />
+                                                <rect x="195" y="185" width="40" height="14" fill="darkgray" />
+                                                <circle cx="150" cy="198" r="7" fill="red" />
+                                                <circle cx="150" cy="228" r="7" fill="lime" />
+                                                <circle cx="150" cy="258" r="7" fill="blue" />
+                                            </svg>
+                                        </div>
+                                        <div class="carousel-caption-custom">
+                                            <h4>Robot en SVG</h4>
+                                            <p>3rd Round: Codi SVG.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselSvg"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselSvg"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+
+                                <div class="carousel-indicators position-static mt-3">
+                                    <button type="button" data-bs-target="#carouselSvg" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselSvg" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselSvg" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                            </div>
+
+                            <div class="explicacio-format">
+                                <p>
+                                    Les imatges SVG són vectorials i estan definides amb formes,
+                                    línies i coordenades. Això permet ampliar-les o reduir-les
+                                    sense perdre qualitat, així que són molt útils per a logotips,
+                                    icones o dibuixos senzills dins d’una pàgina web.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARRUSEL MAPA DE BITS -->
+                    <div class="col-12 col-lg-6">
+                        <div class="bloc-carrusel">
+                            <h3 class="mb-3">Mapa de bits</h3>
+
+                            <div id="carouselBitmap" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner rounded-4 shadow-sm">
+
+                                    <div class="carousel-item active">
+                                        <div class="slide-img">
+                                            <img src="img/casapinypon.png" alt="Captura de la casa en mapa de bits">
+                                        </div>
+                                        <div class="carousel-caption-custom">
+                                            <h4>Casa en PNG</h4>
+                                            <p>1a: Versió rasteritzada formada per píxels.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="slide-img">
+                                            <img src="img/kittelcochefantastico.png"
+                                                alt="Captura del cotxe en mapa de bits">
+                                        </div>
+                                        <div class="carousel-caption-custom">
+                                            <h4>Cotxe en PNG</h4>
+                                            <p>2a: Captura en format raster del mateix tipus d’exercici.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="slide-img">
+                                            <img src="img/wall-e.png" alt="Captura del robot en mapa de bits">
+                                        </div>
+                                        <div class="carousel-caption-custom">
+                                            <h4>Robot en PNG</h4>
+                                            <p>3a: Tercera i última comparativa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBitmap"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselBitmap"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+
+                                <div class="carousel-indicators position-static mt-3">
+                                    <button type="button" data-bs-target="#carouselBitmap" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselBitmap" data-bs-slide-to="1"
+                                        aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselBitmap" data-bs-slide-to="2"
+                                        aria-label="Slide 3"></button>
+                                </div>
+                            </div>
+
+                            <div class="explicacio-format">
+                                <p>
+                                    Les imatges de mapa de bits estan formades per píxels. Per això
+                                    van bé en fotografies o imatges amb molts detalls, però quan
+                                    s’amplien massa poden perdre nitidesa i quedar pixelades. Són
+                                    formats habituals com PNG o JPG.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONCLUSIÓ -->
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card conclusio-lateral">
+                            <div class="card-body">
+                                <h3>Conclusió</h3>
+
+                                <p>
+                                    He volgut que les SVG es veiessin grans, mostrant que independentment de la mida, mantenen qualitat.<br>
+                                    En canvi, les PNG son més petites, i és quan s'amplien (prova a fer zoom) que s'aprecia encara més la pèrdua de nitidesa.
+                                </p>
+
+                                <p>
+                                   En resum...
+                                </p>
+
+                                <ul>
+                                    <li>SVG: escalable i editable des del codi</li>
+                                    <li>PNG/JPG: formats raster formats per píxels</li>
+                                    <li>Cada tipus d’imatge té avantatges diferents al web, així que escollirem el més adequat per a cada cas.</li>
+                                </ul>
+
+                                <p><b>Vols veure la pràctica sencera?</b><br>
+                                <i><a href="https://ssabir94.github.io/AC21-Segon-Intent" rel="noopener" target="_blank">Fes Click!</a>🔗</i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓ ÀUDIO -->
+        <section class="seccio seccio-audio" id="audio">
+            <div class="container">
+                <div class="titol-seccio">
+                    <p class="subtitol">Pràctica 2</p>
+                    <h2>Si t'agrada Radiohead..🤍</h2> <br>
+                    <p>
+                        En aquesta segona pràctica, vaig comparar diferents arxius d’àudio utilitzant
+                        la mateixa cançó per observar com canvien la mida i la qualitat
+                        segons el tipus de compressió.
+                    </p>
+
+                    <p>M'he près la llibertat de possar una petita taula comparativa sota dels reproductors,
+                       per a resumir les característiques de cada format i facilitar la comprensió de les diferències entre ells.
+                    </p>
+                    
+                    <p><b><i>T'aconsello un bon equip de so per apreciar les diferències!</i></b></p>
+                </div>
+
+                <div class="row g-4">
+                    <article class="col-md-6 col-lg-4">
+                        <div class="bloc-audio">
+                            <h3>FLAC</h3>
+                            <audio id="audio1" controls class="w-100">
+                                <source src="audio/Creep1.flac" type="audio/flac" />
+                                El teu navegador no suporta l'àudio.
+                            </audio>
+                            <p>
+                                Format sense pèrdua. Manté una qualitat molt alta i serveix
+                                com a referència.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="col-md-6 col-lg-4">
+                        <div class="bloc-audio">
+                            <h3>MP3 128 kbps</h3>
+                            <audio id="audio2" controls class="w-100">
+                                <source src="audio/Creep3_128mp3.mp3" type="audio/mpeg" />
+                                El teu navegador no suporta l'àudio.
+                            </audio>
+                            <p>
+                                Format comprimit i molt més lleuger, pensat per a web i
+                                reproducció online.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="col-md-6 col-lg-4">
+                        <div class="bloc-audio">
+                            <h3>MP3 320 kbps</h3>
+                            <audio id="audio3" controls class="w-100">
+                                <source src="audio/Creep4_320mp3.mp3" type="audio/mpeg" />
+                                El teu navegador no suporta l'àudio.
+                            </audio>
+                            <p>
+                                Ocupa més que un MP3 de 128 kbps, però conserva millor el
+                                detall del so.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="taula-audio mt-5">
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Format</th>
+                                    <th>Tipus</th>
+                                    <th>Qualitat</th>
+                                    <th>Ús habitual</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>FLAC</td>
+                                    <td>Sense pèrdua</td>
+                                    <td>Molt alta</td>
+                                    <td>Arxiu i col·lecció</td>
+                                </tr>
+                                <tr>
+                                    <td>MP3 128 kbps</td>
+                                    <td>Amb pèrdua</td>
+                                    <td>Mitjana</td>
+                                    <td>Web i ús general</td>
+                                </tr>
+                                <tr>
+                                    <td>MP3 320 kbps</td>
+                                    <td>Amb pèrdua</td>
+                                    <td>Alta</td>
+                                    <td>Música online amb millor qualitat</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <p><b><i>Vols escoltar tots els formats? </b><br>
+                <a href="https://ssabir94.github.io/AC22-ReproductorAudio" rel="noopener" target="_blank">Som-hi!</a>🔗</i></p>
+            </div>
+        </section>
+
+        <!-- SECCIÓ VÍDEO -->
+        <section class="seccio seccio-video" id="video">
+            <div class="container">
+                <div class="titol-seccio">
+                    <p class="subtitol">Pràctica 3</p>
+                    <h2>🔥 Tarantino's Hits amb KdenLive 🔥</h2>
+                    <p><b>Benvingut, fan de Tarantino...🩸</b></p>
+                    <p>
+                        En aquesta pràctica vaig crear un vídeo muntatge i després el vaig
+                        integrar en una pàgina web per mostrar el resultat final i
+                        explicar-ne els aspectes tècnics.<br>
+                        Al costat del reproductor, trobaràs un resum tècnic amb les característiques del vídeo i les eines utilitzades durant el procés d'edició.
+                    </p>
+
+                    <p><b>Haig d'admetre que van ser moles hores d'edició, però va ser molt divertit!</b></p>
+                </div>
+
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="video-wrap">
+                            <video controls class="w-100">
+                                <source src="video/teaser.mp4" type="video/mp4" />
+                                El teu navegador no suporta la etiqueta vídeo.
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="info-video">
+                            <h3>Resum tècnic</h3>
+                            <ul>
+                                <li>Editor utilitzat: Kdenlive</li>
+                                <li>Format final: MP4</li>
+                                <li>Resolució: 1920 x 1080</li>
+                                <li>Fotogrames per segon: 25 fps</li>
+                                <li>Treball amb transicions i efectes</li>
+                            </ul>
+
+                            <p>
+                                El muntatge combina música, ritme i escenes icòniques, amb
+                                transicions i efectes per donar més dinamisme al resultat final.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <p><b>Et mola Kill Bill?</b><br>
+                <i><a href="https://ssabir94.github.io/AC23-Tarantino-s-Hits" target="_blank" rel="noopener">Ready!</a>🔗</i></p>
+            </div>
+        </section>
+
+
+        <!-- FORMULARI -->
+        <section class="seccio seccio-contacte" id="contacte">
+            <div class="container">
+                <div class="titol-seccio">
+                    <p class="subtitol">Contacte</p>
+                    <h2>Envia'm un missatge.</h2>
+                    <p>Et respondre en quant pugui! 😊</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form id="formulariContacte" class="formulari-contacte" novalidate>
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="nom" name="nom" required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="correu" class="form-label">Correu electrònic</label>
+                                <input type="email" class="form-control" id="correu" name="correu" required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="assumpte" class="form-label">Assumpte</label>
+                                <input type="text" class="form-control" id="assumpte" name="assumpte" required />
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="missatge" class="form-label">Missatge</label>
+                                <textarea class="form-control" id="missatge" name="missatge" rows="5"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                Enviar missatge
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- SEPARADOR -->
+        <section class="separador-contacte" aria-hidden="true">
+            <div class="container">
+                <hr>
+            </div>
+        </section>
+
+                <!-- XARXES SOCIALS -->
+        <section class="seccio seccio-social" id="xarxes">
+            <div class="container text-center">
+                <div class="titol-seccio">
+                    <p class="subtitol">Xarxes socials</p>
+                    <h2>Connectem?</h2>
+                    <p>Una mica més de mi.</p>
+                </div>
+
+                <div class="row g-3 justify-content-center">
+                    <div class="col-6 col-md-3">
+                        <a href="https://www.instagram.com/boadiicea.xx" target="_blank" rel="noopener"
+                            class="social-link d-block">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <a href="https://github.com/ssabir94" target="_blank" rel="noopener"
+                            class="social-link d-block">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <a href="https://www.youtube.com/watch?v=KaqC5FnvAEc" target="_blank" rel="noopener"
+                            class="social-link d-block">
+                            <i class="bi bi-youtube"></i> YouTube
+                        </a>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <a href="https://twitter.com/Miinerva7" target="_blank" rel="noopener"
+                            class="social-link d-block">
+                            <i class="bi bi-twitter-x"></i> X
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- PEU -->
+    <footer class="footer">
+        <div class="container">
+            <p class="mb-1">&COPY; Made by Sana - 2026</p>
+            <p class="mb-0">Disseny d'Interfícies Web</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
